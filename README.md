@@ -7,6 +7,8 @@
 1. [Braces](#braces)
 1. [Comments](#comments)
 1. [Variables](#variables)
+1. [Whitespace](#whitespace)
+1. [Strings](#strings)
 
 ## Indentation
 - Soft tabs, 2 spaces (except for Python - soft tabs, 4 spaces)
@@ -182,12 +184,11 @@ for i := 0; i < 10; i++ { }
 // allowed:
 if r := math.Sqrt(inputNumber); r < 250 { }
 ```
-
 - Similarly, avoid lengthy names that can be reduced in length:
+- 
 ```python
 # wrong
 nameOfRoomThatPlayerIsCurrentlyIn = "Haunted Mansion"
-
 #right
 currentRoom = "Haunted Mansion"
 ```
@@ -217,6 +218,59 @@ var userName = "Eddard";
 var userName = "Eddard",
     userAge = 42,
     userColour = colors.BLUE;
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+
+## Whitespace
+
+*This section does not deal with [indentation](#indentation).*
+
+- Always surround operators with a single space, except for increment/decrement operators (++ and --):
+
+```javascript
+// wrong
+4+4;
+myName="Josh";
+for (var i=0; i<length; i ++) { }
+
+// right
+4 + 4;
+myName = "Josh";
+for (var i = 0; i < length; i++) { }
+```
+
+- End every file with a single blank line.
+
+- In a parenthesised for, if, while, etc. statement, insert spaces before and after the parentheses:
+
+```cpp
+// wrong
+if(age > 18){
+  // ...
+}
+
+// right
+if (age > 18) {
+  // ...
+}
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Strings
+
+- All strings should be double-quoted:
+
+```python
+# wrong
+def main():
+    print 'hello, world'
+    
+# right
+def main():
+    print "hello, world"
 ```
 
 **[⬆ back to top](#table-of-contents)**
