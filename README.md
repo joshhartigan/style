@@ -6,6 +6,7 @@
 1. [Indentation](#indentation)
 1. [Braces](#braces)
 1. [Comments](#comments)
+1. [Variables](#variables)
 
 ## Indentation
 - Soft tabs, 2 spaces (except for Python - soft tabs, 4 spaces)
@@ -130,6 +131,92 @@ void setThickness (int thickness) {
 void setThickness (int thickness) {
 	this.thickness = thickness;
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Variables
+
+- Follow these naming guidelines for variable symbols:
+
+```cpp
+// All languages:
+int CONSTANT_VARIABLE;
+class ClassName;
+void functionName;
+char localVariable;
+
+```
+```java
+// java package names:
+
+// wrong
+com.company.packageName;
+
+// right
+com.company.packagename;
+```
+
+- Capitalised acronyms/initialisms, such as HTML and HTTP, should only keep their first capital:
+
+```
+// wrong
+HTTPHTMLRequest request;
+
+// right
+HttpHtmlRequest request;
+```
+
+- Avoid shortened names, unless they're scarce (such as in a for loop, or used once in an if statement/chain):
+
+```go
+// wrong
+MonsterDungeon m;
+
+// right
+MonsterDungeon firstDungeon;
+
+// allowed:
+for i := 0; i < 10; i++ { }
+
+// allowed:
+if r := math.Sqrt(inputNumber); r < 250 { }
+```
+
+- Similarly, avoid lengthy names that can be reduced in length:
+```python
+# wrong
+nameOfRoomThatPlayerIsCurrentlyIn = "Haunted Mansion"
+
+#right
+currentRoom = "Haunted Mansion"
+```
+
+- Name variables that are opposites precisely, and consistently:
+
+```javascript
+// wrong
+contestant.next();
+contestant.back();
+
+// right
+contestant.next();
+contestant.previous();
+```
+
+- **JavaScript**: Always use the `var` keyword, to keep the global namespace clean:
+
+```javascript
+// wrong
+userName = "Eddard";
+
+// right
+var userName = "Eddard";
+
+// also right for multiple variables, if indented as such:
+var userName = "Eddard",
+    userAge = 42,
+    userColour = colors.BLUE;
 ```
 
 **[⬆ back to top](#table-of-contents)**
