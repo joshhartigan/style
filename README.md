@@ -63,6 +63,8 @@ $("element")
     .end()
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Braces
 - Always use braces with if statements and loops:
 
@@ -106,6 +108,8 @@ function() {
 }
 ```
 
+**[⬆ back to top](#table-of-contents)**
+
 ## Comments
 
 - Multiline comments follow `/** comment */` syntax:
@@ -126,3 +130,6 @@ void setThickness (int thickness) {
 void setThickness (int thickness) {
 	this.thickness = thickness;
 }
+```
+
+**[⬆ back to top](#table-of-contents)**
