@@ -135,6 +135,13 @@ void setThickness (int thickness) {
 }
 ```
 
+- The body of a single-line comment should always begin with a space:
+
+```java
+//wrong
+// right
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Variables
