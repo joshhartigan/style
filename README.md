@@ -59,8 +59,8 @@ $("element")
     .action()
     .end()
   .find(".otherClass")
-		.otherAction()
-		.end()
+    .otherAction()
+    .end()
 ```
 
 ## Braces
