@@ -166,6 +166,8 @@ com.company.packageName;
 com.company.packagename;
 ```
 
+- These rules can be bypassed if they need to be (for example, in Go, where exported names begin with a capital letter).
+
 - Capitalised acronyms/initialisms, such as HTML and HTTP, should only keep their first capital:
 
 ```
@@ -196,7 +198,7 @@ if r := math.Sqrt(inputNumber); r < 250 { }
 ```python
 # wrong
 nameOfRoomThatPlayerIsCurrentlyIn = "Haunted Mansion"
-#right
+# right
 currentRoom = "Haunted Mansion"
 ```
 
