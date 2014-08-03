@@ -192,7 +192,7 @@ for i := 0; i < 10; i++ { }
 if r := math.Sqrt(inputNumber); r < 250 { }
 ```
 - Similarly, avoid lengthy names that can be reduced in length:
-- 
+
 ```python
 # wrong
 nameOfRoomThatPlayerIsCurrentlyIn = "Haunted Mansion"
