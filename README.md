@@ -50,6 +50,30 @@ private:
 };
 ```
 
+- Do not indent `case` lines in switch statements:
+
+```cpp
+// wrong
+switch (age) {
+  case 20:
+    return true;
+  case 80:
+    return false;
+  default:
+    return true;
+}
+
+// right
+switch (age) {
+case 20:
+  return true;
+case 80:
+  return false;
+default:
+  return true;
+}
+```
+
 - In long method calls, use indentation following this rule:
 
 ```javascript
@@ -114,7 +138,6 @@ function() {
 **[⬆ back to top](#table-of-contents)**
 
 ## Comments
-
 - Multiline comments follow `/** comment */` syntax:
 
 ```java
