@@ -169,7 +169,7 @@ void setThickness (int thickness) {
 
 ## Variables
 
-- Follow these naming guidelines for variable symbols:
+- Follow these naming guidelines for variable symbols, unless another rule says otherwise:
 
 ```cpp
 // All languages:
@@ -251,6 +251,18 @@ var userName = "Eddard",
     userAge = 42,
     userColour = colors.BLUE;
 ```
+
+- When iterating through a list, vector, scalar, etc., use this syntax for iteration variables:
+
+```cpp
+std::vector <int> numbers;
+for (int number_i = 0; number_i < numbers.size(); number_i++) {
+  // ...
+}
+```
+
+in English form: where `foobar` is the set of data, `foobar_i` is the iterator. If multiple iterators are needed,
+extend to `foobar_j`, `foobar_k`, etc.
 
 **[⬆ back to top](#table-of-contents)**
 
