@@ -9,9 +9,12 @@
 1. [Variables](#variables)
 1. [Whitespace](#whitespace)
 1. [Strings](#strings)
+1. [Editors](#editors)
 
 ## Indentation
-- Soft tabs, 2 spaces (except for Python - soft tabs, 4 spaces)
+- Soft tabs, 2 spaces
+  - Except for Python - soft tabs, 4 spaces)
+  - Except for Golang - hard tabs, 8 spaces (use `gofmt`)
 
 ```javascript
 // wrong
@@ -56,11 +59,11 @@ private:
 // wrong
 switch (age) {
   case 20:
-    return true;
+  return true;
   case 80:
-    return false;
+  return false;
   default:
-    return true;
+  return true;
 }
 
 // right
@@ -74,7 +77,7 @@ default:
 }
 ```
 
-- In long method calls, use indentation following this rule:
+- In long method calls, use indentation following this rule / common sense:
 
 ```javascript
 // wrong
@@ -83,26 +86,28 @@ $("element").find(".aClass").action().end().find(".otherClass").otherAction().en
 // right
 $("element")
   .find(".aClass")
-    .action()
-    .end()
+  .action()
+  .end()
   .find(".otherClass")
-    .otherAction()
-    .end()
+  .otherAction()
+  .end()
 ```
 
 **[⬆ back to top](#table-of-contents)**
 
 ## Braces
-- Always use braces with if statements and loops:
+- Always use braces with if statements and loops. This is because if and when
+  a time comes at which you need to add lines in an if statement, you won't make
+  the mistake of not including braces:
 
 ```java
 // wrong
 if (completed)
-	finishGame();
+  finishGame();
 
 // right
 if (completed) {
-	finishGame();
+  finishGame();
 }
 ```
 
@@ -111,12 +116,12 @@ if (completed) {
 ```cpp
 // bad
 class Base{
-	// ...
+  // ...
 }
 
 // good
 class Base {
-	// ...
+  // ...
 }
 ```
 
@@ -126,12 +131,12 @@ class Base {
 // wrong
 function()
 {
-	alert("hi");
+  alert("hi");
 }
 
 // right
 function() {
-	alert("hi");
+  alert("hi");
 }
 ```
 
@@ -145,7 +150,7 @@ function() {
 // Set the fur thickness for a Squirrel object.
 // Parameter: thickness (int)
 void setThickness (int thickness) {
-	this.thickness = thickness;
+  this.thickness = thickness;
 }
 
 // right
@@ -154,7 +159,7 @@ void setThickness (int thickness) {
  * @param {int} thickness
  */
 void setThickness (int thickness) {
-	this.thickness = thickness;
+  this.thickness = thickness;
 }
 ```
 
@@ -167,9 +172,9 @@ void setThickness (int thickness) {
 
 **[⬆ back to top](#table-of-contents)**
 
-## Variables
+## Naming Things
 
-- Follow these naming guidelines for variable symbols, unless another rule says otherwise:
+- Follow these naming guidelines, unless another rule says otherwise:
 
 ```cpp
 // All languages:
@@ -187,6 +192,12 @@ com.company.packageName;
 
 // right
 com.company.packagename;
+```
+
+* In languages that don't require a certain file name:
+
+```
+program_name.x
 ```
 
 - These rules can be bypassed if they need to be (for example, in Go, where exported names begin with a capital letter).
@@ -248,21 +259,9 @@ var userName = "Eddard";
 
 // also right for multiple variables, if indented as such:
 var userName = "Eddard",
-    userAge = 42,
-    userColour = colors.BLUE;
+  userAge = 42,
+  userColour = colors.BLUE;
 ```
-
-- When iterating through a list, vector, scalar, etc., use this syntax for iteration variables:
-
-```cpp
-std::vector <int> numbers;
-for (int number_i = 0; number_i < numbers.size(); number_i++) {
-  // ...
-}
-```
-
-in English form: where `foobar` is the set of data, `foobar_i` is the iterator. If multiple iterators are needed,
-extend to `foobar_j`, `foobar_k`, etc.
 
 **[⬆ back to top](#table-of-contents)**
 
@@ -285,7 +284,8 @@ myName = "Josh";
 for (var i = 0; i < length; i++) { }
 ```
 
-- End every file with a single blank line.
+- End every file with a single blank line - this is POSIX standard.
+  Vim will do this for you.
 
 - In a parenthesised for, if, while, etc. statement, insert spaces before and after the parentheses:
 
@@ -301,6 +301,15 @@ if (age > 18) {
 }
 ```
 
+- In function calls or container[item] identifiers that contain other function
+  calls or container[item], wrap the inside of the parentheses or square
+  brackets in a space:
+
+```javascript
+doFunction( getAgeOfPanda() + 4 );
+endangeredPandas[ nthPanda() + 1 ];
+```
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Strings
@@ -310,11 +319,19 @@ if (age > 18) {
 ```python
 # wrong
 def main():
-    print 'hello, world'
-    
+  print 'hello, world'
+  print 'he said "hello"'
+
 # right
 def main():
-    print "hello, world"
+  print "hello, world"
+  print "he said \"hello\""
 ```
+
+**[⬆ back to top](#table-of-contents)**
+
+## Editors
+
+- Use the [only true editor](http://www.vim.org).
 
 **[⬆ back to top](#table-of-contents)**
