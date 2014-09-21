@@ -125,7 +125,7 @@ class Base {
 }
 ```
 
-- Braces never have a line to themselves:
+- Opening braces never have a line to themselves:
 
 ```javascript
 // wrong
