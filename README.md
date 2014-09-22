@@ -143,12 +143,15 @@ function() {
 **[⬆ back to top](#table-of-contents)**
 
 ## Comments
-- Multiline comments follow `/** comment */` syntax:
+- Multiline comments over 5 lines follow `/** comment */` syntax:
 
 ```java
 // wrong
 // Set the fur thickness for a Squirrel object.
 // Parameter: thickness (int)
+// TODO: Implement RedSquirrel support
+// TODO: Create support for all animals with fur
+//       (will require a 'FurryAnimal' class)
 void setThickness (int thickness) {
   this.thickness = thickness;
 }
@@ -156,9 +159,12 @@ void setThickness (int thickness) {
 // right
 /**
  * Set the fur thickness for a Squirrel object.
- * @param {int} thickness
+ * Parameter: thickness (int)
+ * TODO: Implement RedSquirrel support
+ * TODO: Create support for all animals with fur
+ *       (will require a 'FurryAnimal' class)
  */
-void setThickness (int thickness) {
+ void setThickness (int thickness) {
   this.thickness = thickness;
 }
 ```
