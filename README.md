@@ -320,13 +320,13 @@ endangeredPandas[ nthPanda() + 1 ];
 
 ## Strings
 
-- All strings should be double-quoted:
+- Use double quotes or single quotes, but keep it consistent:
 
 ```python
 # wrong
 def main():
   print 'hello, world'
-  print 'he said "hello"'
+  print "he said hello"
 
 # right
 def main():
