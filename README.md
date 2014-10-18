@@ -336,6 +336,8 @@ def main():
   print "he said \"hello\""
 ```
 
+- **Strict**: In Ruby, use single quotes, but use double quotes for string interpolation.
+
 **[⬆ back to top](#table-of-contents)**
 
 ## Editors
