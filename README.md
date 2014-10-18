@@ -6,7 +6,7 @@
 1. [Indentation](#indentation)
 1. [Braces](#braces)
 1. [Comments](#comments)
-1. [Variables](#variables)
+1. [Naming Things](#naming-things)
 1. [Whitespace](#whitespace)
 1. [Strings](#strings)
 1. [Editors](#editors)
@@ -204,6 +204,8 @@ com.company.packagename;
 
 ```
 program_name.x
+// or
+program-name.x
 ```
 
 - These rules can be bypassed if they need to be (for example, in Go, where exported names begin with a capital letter).
