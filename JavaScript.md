@@ -1,6 +1,12 @@
 # JavaScript Style Guide
 
-## Variables
+#### Semicolons
+
+* Only use semicolons for multiple statements in one line.
+  However, multiple statements in one line should be avoided
+  outside of for loop headers.
+
+#### Variables
 
 * Always use `var`.
 
@@ -16,7 +22,7 @@
   and for loops (use `i`, `j`, `k`, `l`, etc.)
 
 
-## Comments
+#### Comments
 
 * Use double slashes `//` unless the comment is over 5 lines,
   in which case follow this syntax:
@@ -36,7 +42,7 @@
 * Comments explain *why*, code expalins *what*.
 
 
-## Parentheses
+#### Parentheses
 
 * Follow the rules that are demonstrated below in regards to
   parentheses:
